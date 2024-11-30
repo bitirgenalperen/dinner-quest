@@ -29,25 +29,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Move "No" button away from cursor
     noButton.addEventListener('mouseenter', () => {
-        const contentRect = document.querySelector('.content').getBoundingClientRect();
-        const buttonRect = noButton.getBoundingClientRect();
+        const maxWidth = window.innerWidth - 150;
+        const maxHeight = window.innerHeight - 60;
         
-        const maxWidth = window.innerWidth - buttonRect.width;
-        const maxHeight = window.innerHeight - buttonRect.height;
+        const newX = Math.max(20, Math.random() * maxWidth);
+        const newY = Math.max(20, Math.random() * maxHeight);
         
-        let newX, newY;
-        do {
-            newX = Math.random() * maxWidth;
-            newY = Math.random() * maxHeight;
-        } while (
-            newX < contentRect.right && 
-            newX + buttonRect.width > contentRect.left && 
-            newY < contentRect.bottom && 
-            newY + buttonRect.height > contentRect.top
-        );
-        
-        noButton.style.left = `${Math.max(0, newX)}px`;
-        noButton.style.top = `${Math.max(0, newY)}px`;
+        noButton.style.left = `${newX}px`;
+        noButton.style.top = `${newY}px`;
     });
 
     // Show celebration overlay when "Yes" is clicked
