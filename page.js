@@ -34,7 +34,7 @@ export default function DinnerInvitation() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-[#f5f0eb] flex flex-col items-center justify-center relative overflow-hidden">
+    <div className="min-h-screen bg-[#F8F8FF] flex flex-col items-center justify-center relative overflow-hidden">
       {/* Main content */}
       <div className="text-center z-10">
         <h1 className="text-4xl md:text-5xl font-bold text-[#8B4513] mb-8 animate-bounce">
@@ -61,7 +61,7 @@ export default function DinnerInvitation() {
         <div className="relative">
           <button
             onClick={handleYesClick}
-            className="bg-[#8B4513] hover:bg-[#6B3410] text-white font-bold py-2 px-8 rounded-full mr-4 transform hover:scale-110 transition-transform"
+            className="bg-[#FF69B4] hover:bg-[#FF1493] text-white font-bold py-2 px-8 rounded-full mr-4 transform hover:scale-110 transition-transform"
           >
             Evet 😊
           </button>
@@ -74,7 +74,7 @@ export default function DinnerInvitation() {
               transition: 'all 0.3s ease'
             }}
             onMouseEnter={handleNoButtonHover}
-            className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-8 rounded-full"
+            className="bg-[#4682B4] hover:bg-[#4169E1] text-white font-bold py-2 px-8 rounded-full"
           >
             Hayır 😢
           </button>
