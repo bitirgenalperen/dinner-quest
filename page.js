@@ -91,7 +91,7 @@ export default function DinnerInvitation() {
               onClick={() => setShowCelebration(false)}
               className="mt-4 bg-[#8B4513] hover:bg-[#6B3410] text-white font-bold py-2 px-4 rounded"
             >
-              Close
+              Anlaştıkk
             </button>
           </div>
         </div>
