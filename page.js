@@ -86,7 +86,7 @@ export default function DinnerInvitation() {
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-20">
           <div className="bg-white p-8 rounded-lg text-center">
             <h2 className="text-3xl font-bold text-[#8B4513] mb-4">Harikasın! 🎉</h2>
-            <p className="text-xl text-gray-700">Çıkışında seni bekliyor olacağım 😊</p>
+            <p className="text-xl text-gray-700">Evete tıklaman sonrası bana haber verme kısmını kod olarak eklemediğim için, bana haber ver lütfen 😊</p>
             <button
               onClick={() => setShowCelebration(false)}
               className="mt-4 bg-[#8B4513] hover:bg-[#6B3410] text-white font-bold py-2 px-4 rounded"
